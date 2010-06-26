@@ -1,1 +1,55 @@
-My GitHub Page
+---
+layout: base
+---
+
+<h1>Cucumber Feature Manager</h1>
+<p>
+
+    We are storing specifications for our projects as cucumber features, but we extend usage (look at example below) and
+    add some new
+    conventions to:
+</p>
+<ul>
+    <li>make management possible</li>
+    <li>improve collaboration with client</li>
+    <li>attach estimation direct to scenarios</li>
+</ul>
+<p>
+    so we were able to remove duplication of information that was splited across many places,
+    we are continuously improving our approach and working hard to make it more user friendly in use.
+</p>
+
+<p>
+    It is still beta but if you wanna test then go ahead, your feedback would be valuable
+
+    <br/>Installation instructions are <a href="installation.html">here</a>
+
+    <br/>More Information about <a href="approach.html">approach</a>
+
+    <br/>And about usage of <a href="usage.html">Cucumber FM</a>
+
+    <br/>About cucumber by itself you can read more in cucumber <a href="http://wiki.github.com/aslakhellesoy/cucumber">wiki</a>.
+</p>
+
+<h2>example of feature with additional notation</h2>
+
+{% highlight gherkin %}
+#:::mockup: http://cs3b-cucumber-fm.s3.amazonaws.com/business.overview.png
+@m1
+Feature: Business Overview - dashboard
+    In order to view stuff to do and see cost and value
+    As project manager, product owner
+    I want to see estimation based on active scope and filter
+
+#:::screenshot: http://cs3b-cucumber-fm.s3.amazonaws.com/0.0.10.dasboard.jpg 
+@_done @i1 @mc @business_overview
+Scenario: Viewing dashobard
+    Given I visit documentation page
+    Then I should see:
+      |list of features                                         |
+      |total quantity of features, scenarios and estimation     |
+      |per feature total quantity of scenarios and estimation   |
+
+{% endhighlight %}
+
+
