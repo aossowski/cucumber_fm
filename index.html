@@ -21,15 +21,23 @@ layout: base
 
 <p>
     It is still beta but if you wanna test then go ahead, your feedback would be valuable
-
-    <br/>Installation instructions are <a href="installation.html">here</a>
-
-    <br/>More Information about <a href="approach.html">approach</a>
-
-    <br/>And about usage of <a href="usage.html">Cucumber FM</a>
-
-    <br/>About cucumber by itself you can read more in cucumber <a href="http://wiki.github.com/aslakhellesoy/cucumber">wiki</a>.
 </p>
+<ul>
+    <li>
+        <a href="installation.html">installation instructions</a>
+    </li>
+    <li>
+        <a href="approach.html">More Information about approach</a>
+    </li>
+    <li>
+        <a href="usage.html">And about usage of Cucumber FM</a>
+    </li>
+    <li>
+        <a href="http://wiki.github.com/aslakhellesoy/cucumber">About cucumber by itself you can read more in cucumber
+            wiki</a>.
+    </li>
+</ul>
+
 
 <h2>example of feature with additional notation</h2>
 
@@ -37,18 +45,18 @@ layout: base
 #:::mockup: http://cs3b-cucumber-fm.s3.amazonaws.com/business.overview.png
 @m1
 Feature: Business Overview - dashboard
-    In order to view stuff to do and see cost and value
-    As project manager, product owner
-    I want to see estimation based on active scope and filter
+In order to view stuff to do and see cost and value
+As project manager, product owner
+I want to see estimation based on active scope and filter
 
-#:::screenshot: http://cs3b-cucumber-fm.s3.amazonaws.com/0.0.10.dasboard.jpg 
+#:::screenshot: http://cs3b-cucumber-fm.s3.amazonaws.com/0.0.10.dasboard.jpg
 @_done @i1 @mc @business_overview
 Scenario: Viewing dashobard
-    Given I visit documentation page
-    Then I should see:
-      |list of features                                         |
-      |total quantity of features, scenarios and estimation     |
-      |per feature total quantity of scenarios and estimation   |
+Given I visit documentation page
+Then I should see:
+|list of features                                         |
+|total quantity of features, scenarios and estimation     |
+|per feature total quantity of scenarios and estimation   |
 
 {% endhighlight %}
 
