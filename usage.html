@@ -1,3 +1,48 @@
 ---
 layout: base
 ---
+
+<h1>Usage</h1>
+
+        <p>
+            the best way is to look on <a href='http://demo.cucumber.fm'>demo site</a> where you can try how it works
+        </p>
+
+<h2>Business Overview</h2>
+
+        <p>
+            it show all features and scenarios - when you enter demo site it has redirection that aggregate scenarios by
+            milestone
+        </p>
+
+        <p>
+            you can review or edit feature content by clicking on feature or scenario
+        </p>
+
+        <p> on the right there is filter panel that allow scope scenarios by tag</p>
+        <ul>
+            <li>
+                <pre>@mc @m8</pre>
+                means that i want to see all scenarios that are assigned to developer mc nad milestone m8
+            </li>
+            <li>
+                <pre>@mc @_todo,@_spec ~@m0</pre>
+                all scenarios for developer mc with status todo or spec but without assigned to milestone 0 (backlog)
+            </li>
+        </ul>
+
+        <p>
+            we can also aggregate by two dimension, i very often use status and bucket combination
+        </p>
+
+        <p>
+            last option is adding new feature file ( you can write feature name like this: Knowledge Base - Pro Categories
+            and the filename would be Knowledge_Base___Pro_Categories.feature
+        </p>
+
+<h2>Statistics</h2>
+
+        <p>the main goal of this view is to have common sense of how the project is going on, it can also be scoped by tags
+        as same as in business overview. the most common is scoping by current milestone</p>
+
+        <p>in future we would add all milestones list - including backlog (@m0) and future milestones</p>
